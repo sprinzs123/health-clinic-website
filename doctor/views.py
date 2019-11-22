@@ -1,3 +1,10 @@
 from django.shortcuts import render
 
-# Create your views here.
+def front(request):
+    return render(request, 'doctor/clinic.html')
+
+def contact(request):
+    return render(request, 'doctor/contact.html')
+
+def services(request):
+    return render(request, 'doctor/services.html')
