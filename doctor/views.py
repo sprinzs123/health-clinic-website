@@ -8,3 +8,6 @@ def contact(request):
 
 def services(request):
     return render(request, 'doctor/services.html')
+
+def providers(request):
+    return render(request, 'doctor/provider.html')

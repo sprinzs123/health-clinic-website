@@ -1,74 +1,74 @@
 {% extends 'base.html' %}
 {% block content %}
-    <div class="container contact-all">
-        <div class="row d-flex justify-content-center my-4">
-            <div class="col-md-6">
-                    <h2 class="text-primary">Contact Us</h2>
-                    <div class="text-primary address">
-                        <h4>Family Care Clinic</h4>
-                        <ul>
-                            <li>1234 S Main St</li>
-                            <li>City, NE 68532</li>
-                        </ul>
-                    </div>
-                    <hr class="contact-line">
-                    <div id="hours">
-                        <ul>
-                            <li><b>Clinic Hours</b></li>
-                            <li>Monday-Friday</li>
-                            <li>8 am - 6 pm</li>
-                        </ul>
-                    </div>
-                    <hr class="contact-line">
-                    <div id="appointment">
-                        <h2 class="text-info">Appoitments & Inquires</h2>
-                        <ul>
-                            <li>Family medecine <span class="text-primary">(132) 321 4432</span></li>
-                            <li>Internal medecine <span class="text-primary">(132) 321 4432</span></li>
-                            <li>Lab <span class="text-primary">(132) 321 4432</span></li>
-                        </ul>
-                    </div>
-                    <hr class="contact-line">
-                    <div id='billing'>
-                        <h4 class="text-info">Billing</h4>
-                        <ul>
-                            <li>Call Billing Department <span class="text-primary">(132) 321 4432</span></li>
-                            <li><b>Billing Hours</b></li>
-                            <li>Monday-Friday</li>
-                            <li>8 am - 4.30 pm</li>
-                        </ul>
+<div class="container contact-all">
+    <div class="row d-flex justify-content-center my-4">
+        <div class="col-md-6">
+            <h2 class="text-primary">Contact Us</h2>
+            <div class="text-primary address" id='address'>
+                <h4>Family Care Clinic</h4>
+                <ul>
+                    <li>1234 S Main St</li>
+                    <li>City, NE 68532</li>
+                </ul>
+            </div>
+            <hr class="contact-line">
+            <div id="hours">
+                <ul>
+                    <li><b>Clinic Hours</b></li>
+                    <li>Monday-Friday</li>
+                    <li>8 am - 6 pm</li>
+                </ul>
+            </div>
+            <hr class="contact-line">
+            <div id="appointment">
+                <h2 class="text-info">Appoitments & Inquires</h2>
+                <ul>
+                    <li>Family medecine <span class="text-primary">(132) 321 4432</span></li>
+                    <li>Internal medecine <span class="text-primary">(132) 321 4432</span></li>
+                    <li>Lab <span class="text-primary">(132) 321 4432</span></li>
+                </ul>
+            </div>
+            <hr class="contact-line">
+            <div id='billing'>
+                <h4 class="text-info">Billing</h4>
+                <ul>
+                    <li>Call Billing Department <span class="text-primary">(132) 321 4432</span></li>
+                    <li><b>Billing Hours</b></li>
+                    <li>Monday-Friday</li>
+                    <li>8 am - 4.30 pm</li>
+                </ul>
 
-                    </div>
-                    <hr class="contact-line">
-                    <div id="contact">
-                        <h4 class="text-info">Contact Us</h4>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card card-body border border-secondary my-3">
-                                    <p>Please ender your information and we will get to you as soon as possible</p>
-                                    <input type="text" class="border border-secondary my-2" placeholder="Name">
-                                    <input type="text" class="border border-secondary my-2" placeholder="Phone">
-                                    <input type="text" class="border border-secondary my-2" placeholder="email">
-                                    <input type="text" class="border border-secondary contact-info my-2">
-                                    <!-- <textarea class="border border-primary">
-                                            
-                                    </textarea> -->
-                                    <div class="d-flex justify-content-end">
-                                        <button class="btn btn-primary my-3">Submit</button>
-                                    </div>
-            
-            
-            
+            </div>
+            <hr class="contact-line">
+            <div id="form">
+                <h4 class="text-info" id='form'>Contact Us</h4>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form action="/contact#form" method="GET">
+                            <div class="card card-body border border-secondary my-3">
+                                <p>Please enter your information and we will get to you as soon as possible</p>
+                                <div id="error" class='text-danger'></div>
+                                <input type="text" class="border border-secondary my-2" placeholder="Name" id="name">
+                                <input type="text" class="border border-secondary my-2" placeholder="Phone" id="phone">
+                                <input type="text" class="border border-secondary my-2" placeholder="email" id="email">
+                                <!-- <input type="text" class="border border-secondary contact-info my-2" id="text"> -->
+                                <textarea name="Text1" cols="40" rows="5" class="border border-secondary contact-info my-2" id="text"></textarea>
+                                <!-- <textarea class="border border-primary">
+                                                        
+                                                </textarea> -->
+                                <div class="d-flex justify-content-end">
+                                    <button class="btn btn-primary my-3" type="submit">Submit</button>
                                 </div>
                             </div>
-                        </div>
-            
+                        </form>
                     </div>
+                </div>
             </div>
         </div>
-
-        <!-- pur dic here -->
     </div>
 
+    <!-- pur dic here -->
+</div>
 
-    {% endblock %}
+
+{% endblock %}

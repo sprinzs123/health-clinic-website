@@ -1,10 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+{% load staticfiles %}
+    <div class="container my-4">
+        <h2 class='text-primary' id='doc'>Our Providers</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, exercitationem ipsam et fuga delectus cumque
+            ab architecto beatae vero dignissimos officia placeat ratione cupiditate quos nam. Quasi dolorum illum quos,
+            facere suscipit dignissimos, earum tenetur est nulla quia, repellendus incidunt.</p>
+        <h4 class='text-info' id="doc">Doctors</h4>
+
+        <ul>
+            <!-- single provider -->
+            <li class='row my-2'>
+                <div class="col-sm-3">
+                    <img src="{% static 'doc-1.jpg' %}" class='card-image height-80' alt="">
+                </div>
+                <div class="col-sm-8">
+                    <h5>Dr Smith</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio vitae repellendus
+                        aperiam itaque cumque recusandae quas, laudantium placeat atque repellat excepturi dolore
+                        suscipit eum eligendi, dicta minus doloribus ad rerum ipsam, quisquam aliquid. Sit officia
+                        suscipit fuga, corrupti corporis eum eligendi blanditiis repudiandae dolorem, ipsa est. Illo,
+                        saepe veritatis.</p>
+                </div>
+            </li>
+            <br>
+            <!-- single provider -->
+            <li class='row my-2'>
+                <div class="col-sm-3">
+                    <img src="{% static 'doc-2.jpg' %}" class='card-image height-80' alt="">
+                </div>
+                <div class="col-sm-8">
+                    <h5>Dr Evil</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio vitae repellendus
+                        aperiam itaque cumque recusandae quas, laudantium placeat atque repellat excepturi dolore
+                        suscipit eum eligendi, dicta minus doloribus ad rerum ipsam, quisquam aliquid. Sit officia
+                        suscipit fuga, corrupti corporis eum eligendi blanditiis repudiandae dolorem, ipsa est. Illo,
+                        saepe veritatis.</p>
+                </div>
+            </li>
+            <br>
+            <!-- end single provider -->
+            <!-- one provider -->
+            <h4 class='text-info' id='sup'>Supporting staff</h4>
+            <ul>
+                <!-- single provider -->
+                <li class='row my-2'>
+                    <div class="col-sm-3">
+                        <img src="{% static 'sup-1.jpg' %}" class='card-image height-80' alt="">
+                    </div>
+                    <div class="col-sm-8">
+                        <h5>Nurse</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio vitae
+                            repellendus
+                            aperiam itaque cumque recusandae quas, laudantium placeat atque repellat excepturi dolore
+                            suscipit eum eligendi, dicta minus doloribus ad rerum ipsam, quisquam aliquid. Sit officia
+                            suscipit fuga, corrupti corporis eum eligendi blanditiis repudiandae dolorem, ipsa est.
+                            Illo,
+                            saepe veritatis.</p>
+                    </div>
+                </li>
+                <br>
+                <!-- end single provider -->
+                <!-- one provider -->
+                <li class='row my-2'>
+                    <div class="col-sm-3">
+                        <img src="{% static 'ca-1.jpg' %}" class='height-80' alt="">
+                    </div>
+                    <div class="col-sm-8">
+                        <h5>Front Desk</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio vitae
+                            repellendus
+                            aperiam itaque cumque recusandae quas, laudantium placeat atque repellat excepturi dolore
+                            suscipit eum eligendi, dicta minus doloribus ad rerum ipsam, quisquam aliquid. Sit officia
+                            suscipit fuga, corrupti corporis eum eligendi blanditiis repudiandae dolorem, ipsa est.
+                            Illo,
+                            saepe veritatis.</p>
+                    </div>
+                </li>
+                <br>
+                <!-- end single provider -->
+                <!-- one provider -->
+                <li class='row my-2'>
+                    <div class="col-sm-3">
+                        <img src="{% static 'cat-2.jpg' %}" class='card-image height-80' alt="">
+                    </div>
+                    <div class="col-sm-8">
+                        <h5>Lab Person</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio vitae
+                            repellendus
+                            aperiam itaque cumque recusandae quas, laudantium placeat atque repellat excepturi dolore
+                            suscipit eum eligendi, dicta minus doloribus ad rerum ipsam, quisquam aliquid. Sit officia
+                            suscipit fuga, corrupti corporis eum eligendi blanditiis repudiandae dolorem, ipsa est.
+                            Illo,
+                            saepe veritatis.</p>
+                    </div>
+                </li>
+                <br>
+                <!-- end single provider -->
+            </ul>
+    </div>
+{% endblock %}
